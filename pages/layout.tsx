@@ -1,16 +1,15 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
+// ❌ No 'use client'
 
-const inter = Inter({ subsets: ["latin"] })
+import './globals.css'
+import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Glow Corp - Illuminating Digital Excellence",
-  description:
-    "We create digital experiences that shine. From innovative technology solutions to creative design, we help businesses illuminate their potential in the digital world.",
-    generator: 'v0.dev'
+  title: 'Glow Corp - Illuminating Digital Excellence',
+  description: 'We create digital experiences that shine...',
 }
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
