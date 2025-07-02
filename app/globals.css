@@ -1,3 +1,9 @@
+/* ✅ Always include Tailwind’s core layers first */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Extend Tailwind’s base styles */
 @layer base {
   :root {
     /* Light mode — clean, minimal */
@@ -21,11 +27,11 @@
     --input: 210 20% 90%;
     --ring: 222 47% 11%;
 
-    --chart-1: 220 90% 56%; /* Blue */
-    --chart-2: 160 60% 50%; /* Green */
-    --chart-3: 45 90% 60%;  /* Amber */
-    --chart-4: 280 60% 60%; /* Purple */
-    --chart-5: 350 75% 55%; /* Pink */
+    --chart-1: 220 90% 56%;
+    --chart-2: 160 60% 50%;
+    --chart-3: 45 90% 60%;
+    --chart-4: 280 60% 60%;
+    --chart-5: 350 75% 55%;
 
     --radius: 0.5rem;
 
@@ -41,21 +47,21 @@
 
   .dark {
     /* Dark mode — sleek & professional */
-    --background: 222 47% 5%; /* Very dark blue/gray */
-    --foreground: 0 0% 98%;   /* White */
+    --background: 222 47% 5%;
+    --foreground: 0 0% 98%;
     --card: 222 47% 8%;
     --card-foreground: 0 0% 98%;
     --popover: 222 47% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 220 90% 60%; /* Accent blue for links/buttons */
+    --primary: 220 90% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 222 15% 20%; /* Darker background shade */
+    --secondary: 222 15% 20%;
     --secondary-foreground: 0 0% 98%;
     --muted: 222 15% 20%;
     --muted-foreground: 0 0% 70%;
     --accent: 222 15% 20%;
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 62% 50%; /* Slightly muted red */
+    --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
     --border: 222 15% 25%;
     --input: 222 15% 25%;
@@ -75,5 +81,21 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 222 15% 25%;
     --sidebar-ring: 220 90% 60%;
+  }
+
+  /* Base element resets */
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ✅ Any extra utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
