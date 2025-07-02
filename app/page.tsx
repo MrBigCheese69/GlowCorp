@@ -257,8 +257,8 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <a href="https://glowlive.netlify.app">GlowLiveV1</a>
-                <a href="https://glowchatoffical.netlify.app">GlowChatV1</a>
+               <a href="https://glowlive.netlify.app">GlowLiveV1</a>
+           <li><a href="https://glowchatoffical.netlify.app">GlowChatV1</a></li>
                 <a href="https://glowclient.netlify.app/">GlowClient</a>
                 <a href="officalthegamezone.netlify.app">GlowGaming</a>
               </ul>
