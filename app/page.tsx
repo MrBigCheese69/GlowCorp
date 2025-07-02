@@ -257,7 +257,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Web Development</li>
+                <a href="https://glowlive.netlify.app">GlowLiveV1</a>
                 <li>Digital Marketing</li>
                 <li>Brand Design</li>
                 <li>Consulting</li>
