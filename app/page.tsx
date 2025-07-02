@@ -7,35 +7,35 @@ import Link from "next/link"
 export default function HomePage() {
   const blogCategories = [
     {
-      title: "Tech Insights",
-      description: "Latest trends in technology and innovation",
+      title: "Glow Live",
+      description: "Get The Latest Information On Your Favorite Streamers", 
       icon: Code,
       posts: 24,
-      category: "technology",
+      category: "Streaming",
       color: "bg-emerald-500",
     },
     {
-      title: "Design Studio",
-      description: "Creative design tips and inspiration",
+      title: "Glow Client",
+      description: "Get The Latest Streamer Info On Your Desktop",
       icon: Palette,
       posts: 18,
-      category: "design",
+      category: "Clients",
       color: "bg-purple-500",
     },
     {
-      title: "Business Growth",
-      description: "Strategies for scaling your business",
+      title: "Glow Chat",
+      description: "Chat With Your Friends",
       icon: TrendingUp,
       posts: 31,
-      category: "business",
+      category: "Communcation",
       color: "bg-orange-500",
     },
     {
-      title: "Digital Marketing",
-      description: "Marketing insights and best practices",
+      title: "Glow Gaming",
+      description: "Get The Latest Games And Info",
       icon: Globe,
       posts: 27,
-      category: "marketing",
+      category: "Entertainment",
       color: "bg-rose-500",
     },
   ]
@@ -77,8 +77,8 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              We create digital experiences that shine. From innovative technology solutions to creative design, we help
-              businesses illuminate their potential in the digital world.
+              We create digital experiences to make your life easier. From getting the latest information on your
+              favorite streamers to providing desktop clients and communication tools, we illuminate your digital world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
@@ -99,7 +99,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-4">About Glow Corp</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              We're passionate about creating digital solutions that make a lasting impact
+              We're passionate about creating solutions that make a lasting impact
             </p>
           </div>
 
@@ -109,12 +109,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-emerald-600" />
                 </div>
-                <CardTitle className="text-slate-800">Innovation First</CardTitle>
+                <CardTitle className="text-slate-800">Functionality First</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-center">
-                  We stay ahead of the curve, embracing cutting-edge technologies to deliver solutions that drive real
-                  results for our clients.
+                  Our designs prioritize user experience and functionality, ensuring that every interaction is seamless and
+                  intuitive.
                 </p>
               </CardContent>
             </Card>
@@ -124,12 +124,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-purple-600" />
                 </div>
-                <CardTitle className="text-slate-800">Client-Focused</CardTitle>
+                <CardTitle className="text-slate-800">User-Focused</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-center">
-                  Your success is our success. We work closely with each client to understand their unique needs and
-                  deliver tailored solutions.
+                  We put users at the heart of everything we do, crafting experiences that resonate and engage with your
+                  audience.
                 </p>
               </CardContent>
             </Card>
@@ -139,12 +139,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-8 h-8 text-orange-600" />
                 </div>
-                <CardTitle className="text-slate-800">Global Impact</CardTitle>
+                <CardTitle className="text-slate-800">Time Saver</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-center">
-                  From startups to enterprises, we've helped businesses across the globe transform their digital
-                  presence and achieve their goals.
+                  Our solutions are designed to save you time and effort, allowing you to focus on what matters most—growing
+                  your business.
                 </p>
               </CardContent>
             </Card>
@@ -155,23 +155,20 @@ export default function HomePage() {
               <div>
                 <h3 className="text-3xl font-bold text-slate-800 mb-4">Our Mission</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                  At Glow Corp, we believe every business has the potential to shine in the digital landscape. Our
-                  mission is to illuminate that potential through innovative design, cutting-edge technology, and
-                  strategic thinking that drives measurable results.
+                  At Glow Corp, we strive to illuminate the digital landscape with innovative solutions that empower
+                  individuals and businesses alike. Our mission is to create products that save our users time and enhance their
+                  digital experiences.
                 </p>
                 <Button className="bg-emerald-600 hover:bg-emerald-700">Join Our Journey</Button>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600">150+</div>
-                  <div className="text-slate-600">Projects Completed</div>
+                  <div className="text-3xl font-bold text-emerald-600">140+</div>
+                  <div className="text-slate-600">Streamers Tracked</div>
                 </div>
+
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600">50+</div>
-                  <div className="text-slate-600">Happy Clients</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600">5</div>
+                  <div className="text-3xl font-bold text-emerald-600">2</div>
                   <div className="text-slate-600">Years Experience</div>
                 </div>
                 <div className="text-center">
